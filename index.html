@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navigaite">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<button class="nav__button nav__button-active">
+							<span class="nav__desc">Имя и e-mail</span>
+							<span class="nav__number">1</span>
+						</button>
+					</li>
+					<li class="nav__item">
+						<button class="nav__button nav__button-visited">
+							<span class="nav__desc"> страна и город </span>
+							<span class="nav__number">2</span>
+						</button>
+					</li>
+					<li class="nav__item">
+						<button class="nav__button nav__button-unavailable">
+							<span class="nav__desc">социальные сети</span>
+							<span class="nav__number">3</span>
+						</button>
+					</li>
+					<li class="nav__item">
+						<button class="nav__button nav__button-unavailable">
+							<span class="nav__desc"> любимый котик</span>
+							<span class="nav__number">4</span>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="forma">
+			<form action="" class="form">
+				<fieldset class="form__fieldest">
+					<legend class="form__legend"> 1. Введите имя и e-mail</legend>
+
+					<label for="form__name" class="form__label">Ваше имя</label>
+					<input type="text" placeholder="Имя" class="form__name" id="form__name" required>
+					
+
+
+					<label for="form__email" class="form__label">Ваш e-mail</label>
+					<input type="email" placeholder="E-mail" class="form__email" id="form__email" required>
+					
+				</fieldset>
+
+				<fieldset class="form__fieldest">
+					<legend class="form__legend" >2. Выбирите страну и город</legend>
+
+					<label for="form__county" class="form__label">Ваша страна</label>
+					<select name="form__county" placeholder="Страна"  id="form__county" class="form__county" required></select>	
+
+					<label for="form__city" class="form__label">Ваш город</label>
+					<select name="form__city" placeholder="Город" id="form__city" required></select>
+					
+				</fieldset>
+				<fieldset class="form__fieldest">
+					<legend class="form__legend"> 3. Отметьте социальные сети</legend>
+					<input type="checkbox" name="form__social" id="form__social-facebook">
+					<label for="form__social-facebook">Facebook</label>
+					<input type="text" placeholder="Ваша страница в в Facebook " name="form__social-url" id="form-social-url-facebook">
+
+					<input type="checkbox" name="form__social" id="form__social-vk">
+					<label for="form__social-vk">Вконтакте</label>
+					<input type="text" placeholder="Ваша страница в Вконтакте" name="form__social-url" id="form-social-url-vk">
+
+					<input type="checkbox" name="form__social" id="form__social-twitter">
+					<label for="form__social-twitter"> Twitter </label>
+					<input type="text" placeholder="Ваша страница в Twitter" name="form__social-url" id="form-social-url-twitter">
+
+					<input type="checkbox" name="form__social" id="form__social-ok">
+					<label for="form__social-ok"> Одноклассники </label>
+					<input type="text" placeholder="Ваша страница в Одноклассниках" name="form__social-url" id="form-social-url-ok">
+				</fieldset>
+
+				<fieldset class="form__fieldest">
+					<legend class="form__legend">4. Выбирите любимого котика</legend>
+					
+					<input type="radio" class="form__radio" name="form__cat" id="form__cat-1">
+					<input type="radio" class="form__radio" name="form__cat" id="form__cat-2">
+					<input type="radio" class="form__radio" name="form__cat" id="form__cat-3">
+					<input type="radio" class="form__radio" name="form__cat" id="form__cat-dog">
+					<div class="form__container-label">
+						<label class="form__label-cat" for="form__cat-1"> 
+							<img src="img/cat1.jpg" class="form__image" alt="Рыжий пиратский котик"> 
+						</label>
+						<label class="form__label-cat" for="form__cat-2">
+							<img src="img/cat2.jpg" class="form__image" alt="милашный рыжий котик">
+						</label>
+						<label class="form__label-cat" for="form__cat-3"> 
+							<img src="img/cat3.jpg" class="form__image" alt="серенький котиу в засаде">
+						</label>
+						<label class="form__label-cat" for="form__cat-dog">
+							<img src="img/dog4.jpg" class="form__image" alt="задумчивый песик">
+						</label>
+					</div>
+					
+				</fieldset>
+			</form>
+		</div>
+
+	</div>
+</body>
+</html>
